@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+i, j: inteiro
+numeros:vetor [1..4, 1..4] de inteiro
+maior:vetor [1..4] de inteiro
+inicio
+      para i de 1 ate 4 faca
+           para j de 1 ate 4 faca
+                numeros[i,j] <- randi(50)
+           fimpara
+      fimpara
+      para i de 1 ate 4 faca
+           para j de 1 ate 4 faca
+                se numeros[i,j] > maior[i] entao
+                   maior[i] <- numeros [i,j]
+                fimse
+           fimpara
+           Escreval ("O maior numero da linha", i , "foi: ", maior[i])
+      fimpara
+fimalgoritmo

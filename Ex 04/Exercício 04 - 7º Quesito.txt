@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+i, j: inteiro
+numeros:vetor [1..4, 1..4] de inteiro
+inicio
+      para i de 1 ate 4 faca
+           para j de 1 ate 4 faca
+                numeros[i,j] <- randi(50)
+           fimpara
+      fimpara
+
+      se (numeros[1,2]=numeros[2,1]) e (numeros[1,3]=numeros[3,1]) e (numeros[2,3]=numeros[3,2]) e (numeros[1,2]<>numeros[3,3]) e (numeros[2,2]<>numeros[1,1]) entao
+        Escreval ("Matriz nao assimetrica")
+        senao
+        Escreval ("Nao assimentrica")
+      fimse
+fimalgoritmo

@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+soma, i, j: inteiro
+numeros:vetor [1..10, 1..10] de inteiro
+inicio
+      para i de 1 ate 10 faca
+           para j de 1 ate 10 faca
+                numeros[i,j] <- randi(50)
+           fimpara
+      fimpara
+      para i de 1 ate 10 faca
+           para j de 1 ate 10 faca
+                soma <- soma + numeros[i,j]
+           fimpara
+      fimpara
+      Escreva ("A soma da matriz foi: ", soma/9:5:2)
+fimalgoritmo

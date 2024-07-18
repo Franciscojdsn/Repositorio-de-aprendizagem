@@ -1,0 +1,15 @@
+algoritmo "semnome"
+var
+maior, i: inteiro
+numeros:vetor [1..10] de inteiro
+inicio
+      para i de 1 ate 10 faca
+           numeros[i] <- randi(50)
+      fimpara
+      para i de 1 ate 10 faca
+           se numeros[i] > maior entao
+              maior <- numeros[i]
+           fimse
+      fimpara
+      Escreva ("Maior numeros do vetor foi: ", maior)
+fimalgoritmo

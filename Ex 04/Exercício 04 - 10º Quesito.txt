@@ -1,0 +1,18 @@
+algoritmo "semnome"
+var
+i, j: inteiro
+numeros:vetor [1..10] de inteiro
+par:vetor[1..10] de inteiro
+inicio
+      para i de 1 ate 10 faca
+                numeros[i] <- randi(50)
+      fimpara
+      para i de 10 ate 1 passo -1 faca
+           se numeros[i] % 2 = 0 entao
+              par[i] <- numeros[i]
+           fimse
+           se par[i] > 0 entao
+              escreva (par[i])
+           fimse
+      fimpara
+fimalgoritmo

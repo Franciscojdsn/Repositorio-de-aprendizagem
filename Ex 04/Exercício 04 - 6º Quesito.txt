@@ -1,0 +1,17 @@
+algoritmo "semnome"
+var
+i, j, posicao, menor: inteiro
+numeros:vetor [1..10] de inteiro
+inicio
+      menor <- 51
+      para i de 1 ate 10 faca
+                numeros[i] <- randi(50)
+      fimpara
+      para i de 1 ate 10 faca
+          se menor > numeros[i] entao
+             menor <- numeros[i]
+             posicao <- i
+          fimse
+      fimpara
+      Escreva ("O menor numero foi: ",menor , " na posicao ",posicao)
+fimalgoritmo

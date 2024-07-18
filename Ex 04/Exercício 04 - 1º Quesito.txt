@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+i, s: inteiro
+numeros:vetor [1..10] de inteiro
+inicio
+      para i de 1 ate 10 faca
+           numeros[i] <- randi(50)
+      fimpara
+      para i de 1 ate 10 faca
+           s <- s + numeros[i]
+      fimpara
+      Escreva ("Valor dos numeros somados: ", s)
