@@ -5,6 +5,7 @@ numeros:vetor [1..4, 1..4] de inteiro
 maior:vetor [1..4] de inteiro
 inicio
       para i de 1 ate 4 faca
+           maior[i] <- -1
            para j de 1 ate 4 faca
                 numeros[i,j] <- randi(50)
            fimpara
