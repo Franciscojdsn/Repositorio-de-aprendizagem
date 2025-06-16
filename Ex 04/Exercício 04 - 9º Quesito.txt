@@ -1,8 +1,9 @@
 algoritmo "semnome"
 var
-i, j: inteiro
+i, j, menor: inteiro
 numeros:vetor [1..10] de inteiro
 inicio
+      menor <- 50
       para i de 1 ate 2 faca
            para j de 1 ate 2 faca
                 numeros[i,j] <- randi(50)
@@ -15,5 +16,5 @@ inicio
                 fimse
            fimpara
       fimpara
-      Escreva ("A soma das diagonais foi: ", numeros[1,1]+numeros[2,2])
+      Escreva ("A soma das diagonais foi: ", numeros[1,1]+numeros[2,2]+numeros[1,2]+numeros[2,1])
 fimalgoritmo
