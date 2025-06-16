@@ -13,5 +13,5 @@ inicio
                 soma <- soma + numeros[i,j]
            fimpara
       fimpara
-      Escreva ("A soma da matriz foi: ", soma/9:5:2)
+      Escreva ("A média da matriz foi: ", soma/100:5:2)
 fimalgoritmo
